@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+<h2>Index</h2>
+<ul style="list-style:decimal">
+    <li>@Html.ActionLink("Generate Root CA ", "GenerateRootPrivateKeyAndCertificate", "Certificates")</li>
+    <li> @Html.ActionLink("GenerateCertificateWithAutoPrivateKeyAndPublicKey", "GenerateCertificateWithAutoPrivateKeyAndPublicKey", "Certificates") </li>
+</ul>

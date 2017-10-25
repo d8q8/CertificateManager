@@ -1,0 +1,56 @@
+﻿@model CertificateManager.WebUI.Models.CertificateModels.RootCaPrivateKeyAndCertificateChain
+@{
+    ViewData["Title"] = "GenerateRootPrivateKeyAndCertificate";
+}
+<h2>GenerateRootPrivateKeyAndCertificate</h2>
+<div>
+    <h4>RootCaPrivateKeyAndCertificateChain</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.PrivateKey)
+        </dt>
+        <dd>
+            @Html.Raw(Model.PrivateKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PublicKey)
+        </dt>
+        <dd>
+            @Html.Raw(Model.PublicKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CertificatePEMFormat)
+        </dt>
+        <dd>
+            @Html.Raw(Model.CertificatePEMFormat)
+        </dd>
+
+    </dl>
+    <h4>Device Key</h4>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DevicePrivateKey)
+        </dt>
+        <dd>
+            @Html.Raw(Model.DevicePrivateKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DevicePublicKey)
+        </dt>
+        <dd>
+            @Html.Raw(Model.DevicePublicKey)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.DeviceCertificate)
+        </dt>
+        <dd>
+            @Html.Raw(Model.DeviceCertificate)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    @*@Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |*@
+    <a asp-action="Index">Back to List</a>
+</div>
